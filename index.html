@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ethan Ward - Web Developer from New York</title>
-
+  <title>Profile</title>
+  <!-- 
+  - Bootstrap
+  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
   <!-- 
     - favicon
   -->
@@ -22,10 +25,11 @@
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;600&display=swap"
     rel="stylesheet">
-</head>
+  </head>
 
 <body id="top">
 
@@ -37,7 +41,7 @@
     <div class="container">
 
       <a href="#">
-        <h1 class="logo">Ethan Ward</h1>
+        <h1 class="logo">Ezzeldeen Al-Sheikh Khalil</h1>
       </a>
 
       <button class="nav-toggle-btn" aria-label="Toggle Menu" data-nav-toggle-btn>
@@ -57,7 +61,7 @@
           </li>
 
           <li>
-            <a href="#portfolio" class="navbar-link" data-nav-link>Portfolio</a>
+            <a href="#myprojects" class="navbar-link" data-nav-link>My Projects</a>
           </li>
 
           <li>
@@ -81,43 +85,36 @@
 
     </div>
   </header>
-
-
-
-
-
   <main>
     <article>
-
       <!-- 
         - #HERO
       -->
-
       <section class="hero" id="home">
+        <!-- alert start -->
+        <div class="alert alert-success fade-out" role="alert" id="alert" style="display: none;">
+          No i am just kidding
+        </div>
+      
+        <!-- alert end -->
         <div class="container">
 
           <div class="hero-banner">
 
-            <img src="./assets/images/hero-banner.jpg" width="800" height="864" loading="lazy" alt="Ethan's Photo"
+            <img src="./assets/images/me.jpg" width="800" height="864" loading="lazy"
               class="img-cover">
 
             <div class="elem elem-1">
-              <p class="elem-title">12</p>
+              <p class="elem-title">3rd</p>
 
-              <p class="elem-text">Years of Success</p>
-            </div>
-
-            <div class="elem elem-2">
-              <p class="elem-title">800+</p>
-
-              <p class="elem-text">Projects Completed</p>
+              <p class="elem-text">Year in Cyber Security</p>
             </div>
 
             <div class="elem elem-3">
-              <ion-icon name="trophy"></ion-icon>
+              <ion-icon name="star" style="color:#FF7F7F;" ></ion-icon>
             </div>
 
-            <img src="./assets/images/rotate-img.png" width="169" height="172" alt="I'm developer from New York"
+            <img src="./assets/images/rotated-page.png" width="169" height="172" alt="I'm developer from New York"
               class="rotate-img">
 
           </div>
@@ -126,17 +123,21 @@
 
             <h2 class="hero-title">
               <span>Hello I'm</span>
-              <strong>Ethan Ward</strong> Web Developer from New York
+              <strong>Ezzeldeen Al-Sheikh Khalil</strong> Web Developer from Palestine
             </h2>
 
             <p class="hero-text">
-              Adipisicing elit. Neque nulla voluptatum eos repellat deserunt nesciunt tempore porro totam.
+              I 'm a passionate web developer with a strong focus on creating user-friendly and visually appealing websites
+
             </p>
 
             <div class="btn-group">
-              <a href="#contact" class="btn btn-primary blue">Get a Quote</a>
-
-              <a href="#about" class="btn">About Me</a>
+              <a href="https://github.com/ElDShell" target="_blank" class="icon-link"><i class="fa-brands fa-github" ></i></a>
+              <a href="https://www.linkedin.com/in/eld-shell-b62445261/" target="_blank" class="icon-link"> <i class="fa-brands fa-linkedin"></i></a>
+              <a href="#contact" class="icon-link"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="btn-group">
+              <a href="#about" class="btn btn-primary blue">About me</a>
             </div>
 
           </div>
@@ -144,75 +145,57 @@
         </div>
       </section>
 
-
-
-
-
       <!-- 
         - #ABOUT
       -->
-
       <section class="section about" id="about">
         <div class="container">
 
           <figure class="about-banner">
 
-            <img src="./assets/images/about-banner.jpg" width="800" height="652" loading="lazy" alt="Ethan's Photo"
+            <img src="./assets/images/p-logo.jpg" width="800" height="652" loading="lazy" alt="Ethan's Photo"
               class="img-cover">
-
-            <img src="./assets/images/absolute-image.jpg" width="800" height="717" loading="lazy" alt="Ethan's Photo"
-              class="abs-img">
-
             <div class="abs-icon abs-icon-1">
               <ion-icon name="logo-css3"></ion-icon>
             </div>
 
             <div class="abs-icon abs-icon-2">
+              <img src="assets/images/django-logo-negative.png" alt="" width="120px">
+            </div>
+            
+            <div class="abs-icon abs-icon-3">
               <ion-icon name="logo-javascript"></ion-icon>
             </div>
 
-            <div class="abs-icon abs-icon-3">
-              <ion-icon name="logo-angular"></ion-icon>
+            <div class="abs-icon abs-icon-4">
+              <ion-icon name="logo-html5"></ion-icon>
             </div>
 
           </figure>
 
           <div class="about-content">
 
-            <p class="section-subtitle">I'm a Developer</p>
+            <p class="section-subtitle">I'm a Web Developer</p>
 
-            <h2 class="h2 section-title">I Develop Application that Help People</h2>
-
-            <p class="section-text">
-              Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehenderit in voluptate velit esse cillum
-              dolore eu
-              fugiat nulla pariatu epteur sint occaecat cupidatat
-            </p>
+            <h2 class="h2 section-title">I Develop Web Pages that Help People</h2>
 
             <p class="section-text">
-              Krnon proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
-              omnis
+              As a passionate Django web developer, I focus on creating web pages that are not only functional but also serve a greater purpose by making tasks easier and more accessible for people. My work revolves around building dynamic, user-friendly applications that solve real-world problems, helping users achieve their goals seamlessly.
             </p>
-
-            <a href="#portfolio" class="btn btn-primary blue">View Portfolio</a>
+            <a href="#myprojects" class="btn btn-primary blue">View My Projects</a>
 
           </div>
 
         </div>
       </section>
-
-
-
-
-
+            
       <!-- 
-        - #PORTFOLIO
+        - #MY PROJECTS
       -->
-
-      <section class="section portfolio" id="portfolio">
+      <section class="section myprojects" id="myprojects">
         <div class="container">
 
-          <p class="section-subtitle">Portfolio</p>
+          <p class="section-subtitle">My Projects</p>
 
           <h2 class="h2 section-title">My Amazing Works</h2>
 
@@ -220,15 +203,15 @@
             Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehen derit in voluptate
           </p>
 
-          <ul class="portfolio-list">
+          <ul class="myprojects-list">
 
             <li>
-              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-1.jpg')">
+              <a href="#" class="myprojects-card" style="background-image: url('./assets/images/ticket-system-image.jpg')">
                 <div class="card-content">
 
-                  <p class="card-subtitle">Youtube</p>
+                  <p class="card-subtitle">Github</p>
 
-                  <h3 class="h3 card-title">Web Application for Desiverse</h3>
+                  <h3 class="h3 card-title">Web Application for Ticket-System</h3>
 
                   <span class="btn-link">
                     <span>View Project</span>
@@ -241,17 +224,17 @@
             </li>
 
             <li>
-              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-2.jpg')">
+              <a href="#" class="myprojects-card" style="background-image: url('./assets/images/to-do-list.jpg')">
                 <div class="card-content">
 
-                  <p class="card-subtitle">Vimeo</p>
+                  <p class="card-subtitle">Github</p>
 
-                  <h3 class="h3 card-title">Web Application for Desiverse</h3>
+                  <h3 class="h3 card-title" style="color: black;">To-Do List</h3>
 
                   <span class="btn-link">
-                    <span>View Project</span>
+                    <span style="color: black;">View Project</span>
 
-                    <ion-icon name="arrow-forward"></ion-icon>
+                    <ion-icon name="arrow-forward" style="color: black;"></ion-icon>
                   </span>
 
                 </div>
@@ -259,54 +242,28 @@
             </li>
 
             <li>
-              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-3.jpg')">
+              <a href="#" class="myprojects-card" style="background-image: url('./assets/images/blog_system_image.jpg')">
                 <div class="card-content">
 
-                  <p class="card-subtitle">Soundcloud</p>
+                  <p class="card-subtitle">Github</p>
 
-                  <h3 class="h3 card-title">Web Application for Desiverse</h3>
-
+                  <h3 class="h3 card-title">Web Application for Blogs</h3>
+                  
                   <span class="btn-link">
-                    <span>View Project</span>
-
-                    <ion-icon name="arrow-forward"></ion-icon>
+                    <span>Not Finsihed Yet</span>
+                    <ion-icon name="happy-outline" style="font-size: 5em;"></ion-icon>                  
                   </span>
-
                 </div>
               </a>
             </li>
-
-            <li>
-              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-4.jpg')">
-                <div class="card-content">
-
-                  <p class="card-subtitle">Details</p>
-
-                  <h3 class="h3 card-title">Web Application for Desiverse</h3>
-
-                  <span class="btn-link">
-                    <span>View Project</span>
-
-                    <ion-icon name="arrow-forward"></ion-icon>
-                  </span>
-
-                </div>
-              </a>
-            </li>
-
           </ul>
 
         </div>
       </section>
 
-
-
-
-
       <!-- 
         - #SKILLS
       -->
-
       <section class="section skills" id="skills">
         <div class="container">
 
@@ -314,27 +271,12 @@
 
           <h2 class="h2 section-title">I Develop Skills Regularly</h2>
 
-          <p class="section-text">
-            Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehen derit in voluptate
-          </p>
-
+          <!-- skills start -->
           <ul class="skills-list">
 
             <li class="skills-item">
-              <div class="wrapper" style="width: 95%">
-                <h3 class=" skills-title">CSS</h3>
-
-                <data class="skills-data" value="95">95%</data>
-              </div>
-
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 95%"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
               <div class="wrapper" style="width: 75%">
-                <h3 class="skills-title">React</h3>
+                <h3 class=" skills-title">CSS</h3>
 
                 <data class="skills-data" value="75">75%</data>
               </div>
@@ -346,7 +288,7 @@
 
             <li class="skills-item">
               <div class="wrapper" style="width: 90%">
-                <h3 class="skills-title">MongoDB</h3>
+                <h3 class="skills-title">Python</h3>
 
                 <data class="skills-data" value="90">90%</data>
               </div>
@@ -357,20 +299,44 @@
             </li>
 
             <li class="skills-item">
-              <div class="wrapper" style="width: 70%">
-                <h3 class="skills-title">Python</h3>
+              <div class="wrapper" style="width: 85%">
+                <h3 class="skills-title">Oracle SQL</h3>
 
-                <data class="skills-data" value="70">70%</data>
+                <data class="skills-data" value="85">85%</data>
               </div>
 
               <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 70%"></div>
+                <div class="skills-progress" style="width: 85%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 85%">
+                <h3 class="skills-title">HTML</h3>
+
+                <data class="skills-data" value="85">85%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 85%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 90%">
+                <h3 class="skills-title">Django</h3>
+
+                <data class="skills-data" value="90">90%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 90%"></div>
               </div>
             </li>
 
             <li class="skills-item">
               <div class="wrapper" style="width: 80%">
-                <h3 class="skills-title">PHP</h3>
+                <h3 class="skills-title">JavaScript</h3>
 
                 <data class="skills-data" value="80">80%</data>
               </div>
@@ -380,31 +346,14 @@
               </div>
             </li>
 
-            <li class="skills-item">
-              <div class="wrapper" style="width: 75%">
-                <h3 class="skills-title">JavaScript</h3>
-
-                <data class="skills-data" value="75">75%</data>
-              </div>
-
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 75%"></div>
-              </div>
-            </li>
-
           </ul>
-
+          <!-- skills end -->
         </div>
       </section>
-
-
-
-
 
       <!-- 
         - #CONTACT
       -->
-
       <section class="section contact" id="contact">
         <div class="container">
 
@@ -412,11 +361,11 @@
 
             <p class="card-subtitle">Don't be shy</p>
 
-            <h2 class="h2 section-title">Drop Me a Line</h2>
+            <h2 class="h2 section-title">Send me a Email</h2>
 
             <div class="wrapper">
 
-              <form action="" class="contact-form">
+              <form action="mailto:anything58887@gmail.com" class="contact-form">
 
                 <input type="text" name="name" placeholder="Name" required class="contact-input">
 
@@ -429,21 +378,6 @@
               </form>
 
               <ul class="contact-list">
-
-                <li class="contact-item">
-
-                  <div class="contact-icon">
-                    <ion-icon name="location"></ion-icon>
-                  </div>
-
-                  <div>
-                    <h3 class="contact-item-title">Address</h3>
-
-                    <address class="contact-item-link">
-                      20, London, United Kingdom
-                    </address>
-                  </div>
-
                 </li>
 
                 <li class="contact-item">
@@ -455,7 +389,7 @@
                   <div>
                     <h3 class="contact-item-title">Email</h3>
 
-                    <a href="mailto:hello@ethan.com" class="contact-item-link">hello@ethan.com</a>
+                    <a href="anything58887@gmail.com" class="contact-item-link">eld25351@gmail.com</a>
                   </div>
 
                 </li>
@@ -469,7 +403,7 @@
                   <div>
                     <h3 class="contact-item-title">Phone</h3>
 
-                    <a href="tel:+1234567890" class="contact-item-link">+123 456 7890</a>
+                    <a href="#" class="contact-item-link">+972567353194</a>
                   </div>
 
                 </li>
@@ -482,10 +416,6 @@
 
         </div>
       </section>
-
-
-
-
 
       <!-- 
         - #BLOG
@@ -508,16 +438,15 @@
               <div class="blog-card">
 
                 <figure class="card-banner">
-                  <a href="#">
-                    <img src="./assets/images/blog-1.jpg" width="1181" height="843" loading="lazy"
-                      alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">
-                  </a>
+                  <a href="#home" id="blog1">
+                    <img src="./assets/images/Django-vs-Laravel.png" width="1181" height="843" loading="lazy" class="img-cover">
+                </a>
                 </figure>
 
                 <a href="#" class="card-tag">Web Development</a>
 
                 <h3 class="card-title">
-                  <a href="#">Jim Morisson Says when the musics over turn off the light</a>
+                  <a href="#">Proof that django 10 times better than laravel</a>
                 </h3>
 
               </div>
@@ -527,51 +456,26 @@
               <div class="blog-card">
 
                 <figure class="card-banner">
-                  <a href="#">
-                    <img src="./assets/images/blog-2.jpg" width="1181" height="843" loading="lazy"
-                      alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">
+                  <a href="#" id="blog2">
+                    <img src="./assets/images/python.jpg" width="1181" height="843" loading="lazy"class="img-cover">
                   </a>
                 </figure>
 
                 <a href="#" class="card-tag">Web Development</a>
 
                 <h3 class="card-title">
-                  <a href="#">Jim Morisson Says when the musics over turn off the light</a>
-                </h3>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-                  <a href="#">
-                    <img src="./assets/images/blog-3.jpg" width="1181" height="843" loading="lazy"
-                      alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">
-                  </a>
-                </figure>
-
-                <a href="#" class="card-tag">Web Development</a>
-
-                <h3 class="card-title">
-                  <a href="#">Jim Morisson Says when the musics over turn off the light</a>
+                  <a href="#">Proof that python is the best programming language by far</a>
                 </h3>
 
               </div>
             </li>
 
           </ul>
-
         </div>
       </section>
 
     </article>
   </main>
-
-
-
-
 
   <!-- 
     - #FOOTER
@@ -597,31 +501,27 @@
     </div>
   </footer>
 
-
-
-
-
   <!-- 
     - #BACK TO TOP
   -->
 
   <a href="#top" class="back-to-top" data-back-to-top>BACK TOP</a>
 
-
-
-
-
   <!-- 
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
 
+  <!-- Bootstrap JS  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
   <!-- 
     - ionicon link
   -->
+
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+  
 </body>
 
 </html>

@@ -13,6 +13,15 @@
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
+.icon-link {
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Smooth transition */
+  font-size: 2.5em;
+}
+
+.icon-link:hover {
+  color: hsl(353, 83%, 65%);; /* Change color on hover */
+}
 
 :root {
 
@@ -86,8 +95,16 @@
 
 }
 
-
-
+/*-----------------------------------*\
+  #Alerts
+\*-----------------------------------*/
+.fade-out {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+.fade-out.hidden {
+  opacity: 0;
+}
 
 
 /*-----------------------------------*\
@@ -306,7 +323,7 @@ body {
 .rotate-img { display: none; }
 
 .hero {
-  background-image: url("../images/hero-bg.jpg");
+  background-image: url("../images/Black Hole.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -386,19 +403,19 @@ body {
 
 
 /*-----------------------------------*\
-  #PORTFOLIO
+  #MYPROJECTS
 \*-----------------------------------*/
 
-.portfolio .section-title { margin-block-end: 18px; }
+.myprojects .section-title { margin-block-end: 18px; }
 
-.portfolio .section-text { margin-block-end: 80px; }
+.myprojects .section-text { margin-block-end: 80px; }
 
-.portfolio-list {
+.myprojects-list {
   display: grid;
   gap: 60px;
 }
 
-.portfolio-card {
+.myprojects-card {
   background-color: var(--independence);
   background-repeat: no-repeat;
   background-size: cover;
@@ -411,19 +428,19 @@ body {
   transition: var(--transition-2);
 }
 
-.portfolio-list > li:nth-child(even) .card-content { margin-inline-start: auto; }
+.myprojects-list > li:nth-child(even) .card-content { margin-inline-start: auto; }
 
-.portfolio-card .card-subtitle {
+.myprojects-card .card-subtitle {
   color: var(--orange-soda);
   margin-block-end: 5px;
 }
 
-.portfolio-card .card-title {
+.myprojects-card .card-title {
   max-width: 20ch;
   margin-block-end: 20px;
 }
 
-.portfolio-card .btn-link {
+.myprojects-card .btn-link {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -431,7 +448,7 @@ body {
   text-transform: uppercase;
 }
 
-.portfolio-card .btn-link ion-icon {
+.myprojects-card .btn-link ion-icon {
   color: var(--orange-soda);
   font-size: 1.6rem;
 }
@@ -712,10 +729,10 @@ textarea.contact-input {
 @media (min-width: 600px) {
 
   /**
-   * PORTFOLIO
+   * MYPROJECTS
    */
 
-  .portfolio-list li:nth-child(even) .card-content { margin-inline-start: 50%; }
+  .myprojects-list li:nth-child(even) .card-content { margin-inline-start: 50%; }
 
 }
 
@@ -730,15 +747,15 @@ textarea.contact-input {
 @media (min-width: 768px) {
 
   /**
-   * PORTFOLIO
+   * MYPROJECTS
    */
 
-  .portfolio-card {
+  .myprojects-card {
     background-size: 115%;
     padding-inline: 80px;
   }
 
-  .portfolio-card:is(:hover, :focus) { background-size: 130%; }
+  .myprojects-card:is(:hover, :focus) { background-size: 130%; }
 
 
 
@@ -973,31 +990,36 @@ textarea.contact-input {
 
   .abs-icon-1 {
     top: 50px;
-    left: -120px;
+    left: -55px;
     background-color: var(--bluetiful);
   }
 
   .abs-icon-2 {
     top: -40px;
     right: -40px;
+  }
+  
+  .abs-icon-3 {
+    bottom: 85px;
+    left: 410px;
     background-color: var(--gold-web-golden);
   }
 
-  .abs-icon-3 {
+  .abs-icon-4 {
     bottom: -40px;
-    left: 250px;
+    left: 40px;
     background-color: var(--rufous);
   }
 
 
 
   /**
-   * PORTFOLIO
+   * MYPROJECTS
    */
 
-  .portfolio-card .card-subtitle { font-size: var(--fs-5); }
+  .myprojects-card .card-subtitle { font-size: var(--fs-5); }
 
-  .portfolio-card .btn-link { --fs-6: 1.6rem; }
+  .myprojects-card .btn-link { --fs-6: 1.6rem; }
 
 
 

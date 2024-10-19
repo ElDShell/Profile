@@ -26,10 +26,33 @@ for (let i = 0; i < navbarLinks.length; i++) {
     navToggleBtn.classList.toggle("active");
   });
 }
+/**
+ * Alert
+ */
+document.addEventListener("DOMContentLoaded", function() {
+  function setupClickHandler(blogId) {
+      document.getElementById(blogId).addEventListener("click", function(event) {
+          event.preventDefault(); // Prevent the default action of the link
 
+          // Redirect to the #home section after the alert is hidden
+          window.location.href = "#home"; // Perform the redirection
+          const alert = document.getElementById("alert");
+          alert.style.display = "block"; // Show the alert
 
+          setTimeout(function() {
+              alert.classList.add("hidden"); // Start fade-out
+              setTimeout(function() {
+                  alert.style.display = "none"; // Hide completely after fade-out
 
+              }, 500); // Match this with the transition duration
+          }, 2000); // Show alert for 2 seconds
+      });
+  }
 
+  // Set up handlers for each blog element
+  setupClickHandler("blog1");
+  setupClickHandler("blog2");
+});
 
 /**
  * back to top & header
@@ -46,3 +69,4 @@ window.addEventListener("scroll", function () {
     backTopBtn.classList.remove("active");
   }
 });
+
